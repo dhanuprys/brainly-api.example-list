@@ -2,7 +2,7 @@ const { BrainlyAPI, Server } = require('brainly-api');
 
 BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, async brainly => {
     // find question
-    const questionResults = await brainly.findQuestionHighlight(brainly.currentServer.Lessons.Matematika);
+    const questionResults = await brainly.findQuestionHighlight(brainly.currentServer.Subjects.Matematika);
     //                                                          ^^^^^^^^^^^^^^^^^^^^^ = Server.ID
 
     // get raw data
